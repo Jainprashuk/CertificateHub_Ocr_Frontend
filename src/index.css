@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Tailwind CSS classes are used directly in the HTML (JSX) above */
+
+/* Global styles for body or container */
+.container {
+  max-width: 1000px; /* Adjust to your desired width */
+  margin: 0 auto;
+}
+
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+}
