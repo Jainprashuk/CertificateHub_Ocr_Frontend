@@ -36,7 +36,7 @@ function App() {
   <div className="container mx-auto mt-10 px-4">
     <div className="bg-gray-200 p-8 rounded-lg shadow-md">
       <p className="text-center text-red-500 mb-4">
-        Wait for 60 seconds after writing your email
+        Wait for 60 seconds after writing/Updating your complete email
       </p>
       <div className="flex items-center justify-center space-x-4">
         <label htmlFor="emailInput">Enter Email:</label>
@@ -55,6 +55,9 @@ function App() {
           Clear
         </button>
       </div>
+      <p className="text-center text-red-500 mb-4">
+        Rendering May Take A long As its Backend Deployed On render
+      </p>
     </div>
 
     <ul className="mt-8 bg-gray-100 p-4 rounded-lg">
@@ -69,7 +72,7 @@ function App() {
           </li>
         ))}
         {
-  data.length === 0 ? <p>No skills Found</p> : null
+  data.length === 0 ? <p>Loading.....</p> : null
 }
       </div>
     </ul>
