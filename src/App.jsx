@@ -12,7 +12,7 @@ function App() {
         if (email.trim() !== "") {
           // Ensure email is not empty
           const response = await axios.get(
-            `http://localhost:8100/api/files/email/${email}`
+            `https://certificatehub-ocr-backend.onrender.com/api/files/email/${email}`
           );
           console.log(response);
           setData(response.data);
