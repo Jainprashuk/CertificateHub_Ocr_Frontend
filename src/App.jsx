@@ -68,6 +68,9 @@ function App() {
             {item}
           </li>
         ))}
+        {
+  data.length === 0 ? <p>No skills Found</p> : null
+}
       </div>
     </ul>
   </div>
