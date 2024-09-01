@@ -18,7 +18,7 @@ function App() {
     setError(null);
     try {
       const response = await axios.get(
-        `http://localhost:8100/api/files/email/${email}`
+        `https://certificatehub-ocr-backend.onrender.com/api/files/email/${email}`
       );
       if (response.status === 200) {
         setData(response.data);
